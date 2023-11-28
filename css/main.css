@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --linear-BG: linear-gradient(200deg, #201e1c, #f7931a);
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Section Description */
+.section-description__title {
+  font-size: 24px;
+}
+.section-description__paragraph {
+  font-size: 14px;
+}
+.title--white {
+  color: var(--just-white);
+}
+.paragraph--white {
+  color: var(--soft-orange);
+}
+.title--black {
+  color: var(--warm-black);
+}
+.paragraph--black {
+  color: var(--grey);
+}
+
+
+/* Header  */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  position: relative;
+
+
+
+  height: 50vh;
+
+  background: var(--linear-BG);
+}
+
+/* Company Info */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Logotype */
+.logotype {
+  margin: 40px auto;
+}
+.logotype picture img {
+  width: 200px;
+}
+
+/* Company Info - Our Plans */
+.company-info__our-plans {
+  position: absolute;
+  bottom: -20px;
+}
+
+/* Company Info - Button */
+.company-info__button {
+
+  
+  display: inline-block;
+
+  padding: 12px 16px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 0px #59491e29;
+
+  color: var(--warm-black);
+  font-size: 14px;
+  text-decoration: none;
+
+  background: var(--off-white);
+}
+.company-info__button img {
+  margin-left: 4px;
+}
+
+/* Exchange Rates */
+.exchange-rates {
+
+}
+
+/* Cryptocurrency Table */
+.cryptocurrency-table {
+
+}
+
