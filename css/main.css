@@ -25,11 +25,13 @@ html {
   margin-bottom: 2rem;
 
   font-size: 24px;
+  text-align: center;
 }
 .section-description__paragraph {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   font-size: 14px;
+  text-align: center;
 }
 .title--white {
   color: var(--just-white);
@@ -65,8 +67,6 @@ header {
   align-items: center;
 
   padding: 0 6%;
-
-  text-align: center;
 }
 
 /* Logotype */
@@ -211,13 +211,12 @@ header {
 .advisory {
   padding: 4rem 6%;
 
-  text-align: center;
-
   background: var(--black);
 }
 .benefit-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
   gap: 1rem;
 }
 .benefit-card {
@@ -226,20 +225,24 @@ header {
 
   background: var(--warm-black);
 }
+.benefit-card picture img {
+  margin-bottom: .5rem;
+}
 .benefit-card h4 {
+  margin-bottom: .5rem;
+
   color: var(--just-white);
   font-size: 18px;
 }
 .benefit-card p {
   color: #808080;
+  font-size: 14px;
 }
 
 /* Meet Him Today */
 .meet-him-today {
-
   height: 60vh;
-
-  text-align: center;
+  padding: 6rem 6%;
 
   background: url(../assets/img/bitcoinbaby.jpg);
   background-repeat: no-repeat;
@@ -249,17 +252,39 @@ header {
 
 
 /* Plans */
+.plans {
+  padding: 6rem 6%;
+}
 
+/* Plans Cards */
+.plans-cards {
+  display: flex;
+  justify-content: center;
+}
+/* Plan Card */
 .plan-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 220px;
+  padding: 3rem 2rem;
   /* border: 1px solid var(--grey); */
   box-shadow: 0px 4px 8px 0px #59491e29;
+
+  text-align: center;
 }
 .plan-card h4 {
+  margin-bottom: 1rem;
+
   font-size: 14px;
   font-weight: bold;
 }
-.plan-card p {
+.plan-card > p {
+  margin-bottom: 1.4rem;
+
   font-size: 12px;
 }
 .plan-card p span {
@@ -267,8 +292,13 @@ header {
   font-weight: bold;
 }
 .plan-card a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   padding: 1rem;
   border: 1px solid #f7931a;
+  border-radius: 5px;
 
   color: var(--black);
   font-size: 14px;
@@ -276,9 +306,13 @@ header {
   text-decoration: none;
 
   background: var(--off-white);
+} 
+.plan-card a img {
+  width: 25px;
 }
 .plan-card .plan-card__suggestion {
-  display: inline-block;
+  position: absolute;
+  top: -20px;
 
   padding: 1rem;
   border-radius: 5px;
@@ -289,6 +323,29 @@ header {
 
   background: var(--bitcoin-orange);
 }
+
+
+.accordion {
+  width: 300px;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 1px;
+}
+
+.accordion-header {
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+}
+
 
 /* Footer */
 footer {
@@ -312,4 +369,14 @@ footer ul li {
 }
 footer picture img {
   width: 70px;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 481px) {
+  .benefit-cards {
+    grid-template-columns: repeat(2, 1fr);
+  
+    gap: 1rem;
+  }
 }
