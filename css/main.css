@@ -22,9 +22,13 @@ html {
 
 /* Section Description */
 .section-description__title {
+  margin-bottom: 2rem;
+
   font-size: 24px;
 }
 .section-description__paragraph {
+  margin-bottom: 2rem;
+
   font-size: 14px;
 }
 .title--white {
@@ -41,15 +45,13 @@ html {
 }
 
 
-/* Header  */
+/* Header */
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   position: relative;
-
-
 
   height: 50vh;
 
@@ -61,6 +63,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 0 6%;
 
   text-align: center;
 }
@@ -81,8 +85,6 @@ header {
 
 /* Company Info - Button */
 .company-info__button {
-
-  
   display: inline-block;
 
   padding: 12px 16px;
@@ -101,11 +103,213 @@ header {
 
 /* Exchange Rates */
 .exchange-rates {
+  padding: 0 6%;
 
+  text-align: center;
+
+  background: var(--off-white)
 }
+.exchange-rates picture img {
+  padding: 8rem 0;
+}
+
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+
+  /* width: 100%; */
+  /* height: 80vh; */
+  padding-bottom: 6rem;
+
+  /* background-color: #000; */
+  user-select: none;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: end;
+  
+  
+  width: 100%;
+  height: 100%;
+}
+.controls span {
+  margin: auto 20px;
+  
+  color: #fff;
+  font-size: 3.5em;
+}
+
+/* Slider */
+.slider {
+  /* position: absolute; */
+}
+.slider .slides {
+  display: none;
+
+  /* width: 100%; */
+  /* height: 80vh; */
+
+  /* filter: brightness(0.5); */
+}
+.slider .slides.active {
+  display: block;
+
+  transition: .5s;
+}
+
 
 /* Cryptocurrency Table */
 .cryptocurrency-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cryptocurrency-table table {
+  border-radius: 5px;
 
+  font-size: 18px;
+  
+  background-color: var(--just-white);
+}
+.cryptocurrency-table table .table-title {
+  margin : 1rem;
+
+  text-align: start;
+  font-weight: bold;
+}
+.table-title--color-orange {
+  color: var(--bitcoin-orange);
+}
+.table-title--color-blue {
+  color: var(--secondary-blue);
+}
+.cryptocurrency-table table th, .cryptocurrency-table table td {
+  padding: 1rem 2rem;
+  border-bottom : 1px solid var(--grey);
+
+  text-align: start;
+}
+.cryptocurrency-table > p {
+  display: inline-block;
+
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+
+  font-size: 18px;
+  
+  background: var(--soft-orange);
 }
 
+/* Advisory */
+.advisory {
+  padding: 4rem 6%;
+
+  text-align: center;
+
+  background: var(--black);
+}
+.benefit-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.benefit-card {
+  padding: 1rem;
+  border-radius: 5px;
+
+  background: var(--warm-black);
+}
+.benefit-card h4 {
+  color: var(--just-white);
+  font-size: 18px;
+}
+.benefit-card p {
+  color: #808080;
+}
+
+/* Meet Him Today */
+.meet-him-today {
+
+  height: 60vh;
+
+  text-align: center;
+
+  background: url(../assets/img/bitcoinbaby.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Plans */
+
+.plan-card {
+  width: 220px;
+  /* border: 1px solid var(--grey); */
+  box-shadow: 0px 4px 8px 0px #59491e29;
+}
+.plan-card h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.plan-card p {
+  font-size: 12px;
+}
+.plan-card p span {
+  font-size: 52px;
+  font-weight: bold;
+}
+.plan-card a {
+  padding: 1rem;
+  border: 1px solid #f7931a;
+
+  color: var(--black);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+
+  background: var(--off-white);
+}
+.plan-card .plan-card__suggestion {
+  display: inline-block;
+
+  padding: 1rem;
+  border-radius: 5px;
+
+  color: var(--just-white);
+  font-size: 12px;
+  font-weight: bold;
+
+  background: var(--bitcoin-orange);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background: var(--bitcoin-orange);
+}
+footer ul {
+  padding: 2rem 0;
+
+  list-style: none;
+}
+footer ul li {
+  padding: 1rem 0 0;
+
+  color: var(--off-white);
+  font-size: 14px;
+}
+footer picture img {
+  width: 70px;
+}

@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batatabit - Mobile First</title>
 
+  <!-- CSS (Styles) -->
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- https://www.figma.com/file/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=81%3A132 -->
 </head>
-<body>
+  <!-- Header -->
   <header>
+    <!-- Company Info -->
     <section class="company-info">
+      <!-- Logotype -->
       <div class="logotype">
         <picture>
           <img src="assets/img/logo.svg" alt="logotype">
         </picture>
       </div>
-      
+      <!-- Section Description -->
       <div class="section-description">
         <h3 class="section-description__title title--white">La próxima revolución en el intercambio de criptomonedas.</h3>
         <p class="section-description__paragraph paragraph--white">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
@@ -34,52 +38,208 @@
       </div>
     </section>
   </header>
+  <!-- Main -->
   <main>
+    <!-- Exchange Rates -->
     <section class="exchange-rates">
       <picture>
         <img src="assets/img/Bitcoin.svg" alt="">
       </picture>
 
+      <!-- Section Description -->
       <div class="section-description">
         <h3 class="section-description__title title--black">Visibilizamos todas las tasas de cambio.</h3>
         <p class="section-description__paragraph paragraph--black">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
       </div>
 
-      <div class="cryptocurrency-table">
-        <table>
-          <caption>Monedas</caption>
-          <tr>
-            <th>Bitcoin</th>
-            <td>$ 1.96
-              <img src="assets/icons/trending-down.svg">
-            </td>
-          </tr>
-          <tr>
-            <th>Ethereum</th>
-            <td>$ 0.07
-              <img src="assets/icons/trending-up.svg">
-            </td>
-          </tr>
-          <tr>
-            <th>Ripple</th>
-            <td>$ 2.15
-              <img src="assets/icons/trending-down.svg">
-            </td>
-          </tr>
-          <tr>
-            <th>Stellar</th>
-            <td>$ 4.96
-              <img src="assets/icons/trending-down.svg">
-            </td>
-          </tr>
-        </table>
-        <p>Valores en <span>$ USD</span></p>
+      <!-- Slideshow -->
+      <div class="slideshow">
+        <div class="controls">
+          <span class="prev">
+            <img src="assets/icons/right-arrow.svg" alt="">
+          </span>
+          <!-- <span class="next">
+            <img src="assets/icons/right-arrow.svg" alt="">
+          </span> -->
+        </div>
+        <!-- Slider -->
+        <div class="slider">
+          <div class="slides active">
+            <!-- Cryptocurrency Table -->
+            <div class="cryptocurrency-table">
+              <table>
+                <caption class="table-title table-title--color-orange">Monedas</caption>
+                <tr>
+                  <th>Bitcoin</th>
+                  <td>$ 1.96
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Ethereum</th>
+                  <td>$ 0.07
+                    <img src="assets/icons/trending-up.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Ripple</th>
+                  <td>$ 2.15
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Stellar</th>
+                  <td>$ 4.96
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+              </table>
+              <p>Valores en <b>$ USD</b></p>
+            </div>
+          </div>
+          <div class="slides">
+            <!-- Cryptocurrency Table -->
+            <div class="cryptocurrency-table">
+              <table>
+                <caption class="table-title table-title--color-blue">Comisiones</caption>
+                <tr>
+                  <th>Bitrade</th>
+                  <td>$ 12.96
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Bitpreco</th>
+                  <td>$ 13.07
+                    <img src="assets/icons/trending-up.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Novadax</th>
+                  <td>$ 13.15
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Coinext</th>
+                  <td>$ 14.96
+                    <img src="assets/icons/trending-down.svg">
+                  </td>
+                </tr>
+              </table>
+              <p>Valores en <b>$ USD</b></p>
+            </div> 
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- Advisory -->
+    <section class="advisory">
+      <div class="section-description">
+        <h3 class="section-description__title title--white">Te ayudamos a tomar la mejor decisión, siempre.</h3>
+        <p class="section-description__paragraph paragraph--black">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
+      </div>
+
+      <div class="benefit-cards">
+        <div class="benefit-card">
+          <picture>
+            <img src="assets/icons/clock.svg" alt="">
+          </picture>
+          <h4>Tiempo real</h4>
+          <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+        </div>
+        <div class="benefit-card">
+          <picture>
+            <img src="assets/icons/eye.svg" alt="">
+          </picture>
+          <h4>Tiempo real</h4>
+          <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+        </div>
+        <div class="benefit-card">
+          <picture>
+            <img src="assets/icons/dollar-sign.svg" alt="">
+          </picture>
+          <h4>Tiempo real</h4>
+          <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+        </div>
+        <div class="benefit-card">
+          <picture>
+            <img src="assets/icons/check-circle.svg" alt="">
+          </picture>
+          <h4>Tiempo real</h4>
+          <p>Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+        </div>
       </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <!-- Meet Him Today -->
+    <section class="meet-him-today">
+      <div class="section-description meet-him-today__decription">
+        <h3 class="section-description__title title--white">Conócelo hoy.</h3>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="plans">
+      <div class="section-description">
+        <h3 class="section-description__title title--black">Escoge el plan que mejor se ajuste a ti.</h3>
+        <p class="section-description__paragraph paragraph--black">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+      </div>
+
+      <div>
+        <div class="plan-card">
+          <h4>Pago Anual</h4>
+          <p>$<span>49</span></p>
+          <p>*Ahorras $129 comparado al plan mensual.</p>
+          <a href="" class="plan-card__btn-buy">
+            Escoger este plan
+            <img src="assets/icons/orange-right-arrow.svg" alt="">
+          </a>
+          <div class="plan-card__suggestion">
+            <p>Recomendado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="questions">
+      <div class="section-description">
+        <h3 class="section-description__title title--black">¿Preguntas? Aquí estamos para ti.</h3>
+      </div>
+      <ul>
+        <li>
+          Batabit me permite hacer compras en su plataforma?
+          <img src="assets/icons/down-arrow.svg" alt="">
+        </li>
+        <li>
+          Qué es Bitcoin?
+          <img src="assets/icons/down-arrow.svg" alt="">
+        </li>
+        <li>
+          Cómo puedo realizar una transacción en bitcoins?
+          <img src="assets/icons/down-arrow.svg" alt="">
+        </li>
+        <li>
+          Cómo aseguro mis compras?
+          <img src="assets/icons/down-arrow.svg" alt="">
+        </li>
+      </ul>
+    </section>
   </main>
-  <footer></footer>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li>Linkedin</li>
+      <li>Crunchbase</li>
+      <li>Hackernews</li>
+    </ul>
+    <picture>
+      <img src="assets/img/logo-footer.svg" alt="">
+    </picture>
+  </footer> 
+
+  <script src="js/script.js"></script>
 </body>
 </html>
