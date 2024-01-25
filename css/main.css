@@ -1,0 +1,143 @@
+/*
+  1. Posicionamiento
+  2. Modelo de caja (Box Model)
+  3. Tipografías 
+  4. Visuales 
+  5. Otros
+*/
+
+:root {
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Header */
+header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  min-width: 320px;
+  height: 330px;
+
+  text-align: center;
+
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header figure img {
+  align-self: center;
+  
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+}
+
+.header__title-container {
+  align-self: center;
+
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+
+  text-align: center;
+}
+.header__title-container h1 {
+  color: var(--just-white);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+.header__title-container p {
+  margin-top: 25px;
+
+  color: var(--soft-orange);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.header__title-container .header__button {
+  position: absolute;
+  top: 270px;
+  /* left: calc(50% - 114.5px); */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  display: block;
+
+  width: 230px;
+  height: 48px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  margin-top: 35px;
+
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  background: var(--off-white);
+}
+.header__button span {
+  display: inline-block;
+
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background: url('../assets/icons/down-arrow.svg');
+}
+
+main {
+  width: 100%;
+  height: auto;
+
+  background: var(--off-white);
+}
+
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container .backgroundImg {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  background: url('../assets/img/Bitcoin.svg');
+}
+
+.main-exchange-container__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: auto;
+}
