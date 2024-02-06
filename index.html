@@ -7,6 +7,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 
   <!-- Scrollreveal -->
   <script src="js/scrollreveal.js"></script>
@@ -45,7 +46,7 @@
       </div>
       <!-- Main Tables Container -->
       <section class="main-tables-container">
-        <div class="slideshow">
+        <div class="tables-mobile slideshow">
           <div class="slideshow__controls">
             <span class="prev">
               <img src="assets/icons/right-arrow.svg" alt="">
@@ -115,6 +116,64 @@
                   <p><b>Actualizado:</b> 19 de julio 23:48</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="tables-desktop">
+          <!-- Main Currency Table -->
+          <div class="main-currency-table">
+            <p class="currency-table__title">Monedas</p>
+            <!-- Currency Table Container -->
+            <div class="currency-table__container">
+              <table>
+                <tr>
+                  <td class="table--top-left">Bitcoin</td>
+                  <td class="table--right table--top-right">$1.96 <span class="down"></span></td>
+                </tr>
+                <tr>
+                  <td>Ethereum</td>
+                  <td class="table--right">$0.07 <span class="up"></span></td>
+                </tr>
+                <tr>
+                  <td>Ripple</td>
+                  <td class="table--right">$2.15 <span class="down"></span></td>
+                </tr>
+                <tr>
+                  <td class="table--bottom-left">Stellar</td>
+                  <td class="table--right table--bottom-right">$4.96 <span class="down"></span></td>
+                </tr>
+              </table>                
+            </div>
+            <div class="currency-table__date">
+              <p><b>Actualizado:</b> 19 de julio 23:45</p>
+            </div>
+          </div>
+          <!-- Main Commissions Table -->
+          <div class="main-currency-table">
+            <p class="currency-table__title commissions-table__title">Comisiones</p>
+            <!-- Currency Table Container -->
+            <div class="currency-table__container">
+              <table>
+                <tr>
+                  <td class="table--top-left">Bitrade</td> 
+                  <td class="table--right table--top-right">$12.96</td>
+                </tr>
+                <tr>
+                  <td>Bitpreco</td>
+                  <td class="table--right">$13.07</td>
+                </tr>
+                <tr>
+                  <td>Novadax</td>
+                  <td class="table--right">$13.15</td>
+                </tr>
+                <tr>
+                  <td class="table--bottom-left">Coinext</td>
+                  <td class="table--right table--bottom-right">$14.96</td>
+                </tr>
+              </table>                
+            </div>
+            <div class="currency-table__date commissions-table__date">
+              <p><b>Actualizado:</b> 19 de julio 23:48</p>
             </div>
           </div>
         </div>
@@ -190,9 +249,50 @@
           </div>
         </article>
       </section>
+
+      <!-- Accordion -->
+      <section class="accordion">
+        <article class="accordion-item">
+          <div class="accordion-header">
+            <h4>Batabit me permite hacer compras en su plataforma?</h4>
+            <span class="arrow"></span>
+          </div>
+          <div class="accordion-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
+          </div>
+        </article>
+        <article class="accordion-item">
+          <div class="accordion-header">
+            <h4>Qué es Bitcoin?</h4>
+            <span class="arrow"></span>
+          </div>
+          <div class="accordion-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
+          </div>
+        </article>
+        <article class="accordion-item">
+          <div class="accordion-header">
+            <h4>Cómo puedo realizar una transacción en bitcoins?</h4>
+            <span class="arrow"></span>
+          </div>
+          <div class="accordion-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
+          </div>
+        </article>
+        <article class="accordion-item">
+          <div class="accordion-header">
+            <h4>Cómo aseguro mis compras?</h4>
+            <span class="arrow"></span>
+          </div>
+          <div class="accordion-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
  
+  <!-- Footer -->
   <footer>
     <section class="left">
       <ul>
@@ -204,7 +304,7 @@
     <section class="right">
       <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit">
     </section>
-</footer>
+  </footer>
 
   <script src="js/index.js"></script>
   <script src="js/main.js"></script>

@@ -169,6 +169,12 @@ main {
 }
 
 /* Main Tables Container */
+.tables-mobile {
+  display: block;
+}
+.tables-desktop {
+  display: none;
+}
 /* Slideshow */
 .slideshow {
   position: relative;
@@ -476,6 +482,7 @@ main {
   display: flex;
 
   height: 316px;
+  margin-bottom: 3rem;
 
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -564,6 +571,60 @@ main {
   vertical-align: text-bottom;
 }
 
+/* Accordion */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.accordion-item {
+  align-self: center;
+
+  width: 100%;
+  min-width: 300px;
+  max-width: 460px;
+  margin-bottom: 1px;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  text-align: start;
+
+  cursor: pointer;
+}
+.accordion-header h4 {
+  width: 80%;
+
+  font-size: 14px;
+}
+.accordion-header .arrow {
+  width: 20px;
+  
+  background-image: url("../assets/icons/down-arrow.svg");
+  background-position: center;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.accordion-header img {
+  padding-left: 1rem;
+}
+.accordion-content {
+  display: none;
+
+  padding: 10px;
+
+  text-align: start;
+}
+.accordion-content p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+/* Footer */
 footer {
   display: flex;
 
@@ -572,7 +633,6 @@ footer {
 
   background-color: var(--bitcoin-orange);
 }
-
 footer section {
   display: flex;
   justify-content: center;
