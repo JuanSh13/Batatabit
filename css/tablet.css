@@ -1,6 +1,8 @@
+/* Tables Mobile */
 .tables-mobile {
   display: none;
 }
+/* Tables Desktop */
 .tables-desktop {
   display: flex;
 
@@ -8,6 +10,7 @@
   margin: 0 auto;
 }
 
+/* Product Cards - Container */
 .product-cards__container {
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +19,7 @@
   margin: 0 auto;
 }
 
+/* Plans Container - Slider */
 .plans-container__slider {
   justify-content: center;
 

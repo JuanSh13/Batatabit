@@ -22,10 +22,10 @@
   <header>
     <!-- Logotype -->
     <figure>
-      <img src="assets/img/logo.svg" alt="">
+      <img src="assets/img/logo-min.svg" alt="">
     </figure>
     <!-- Header - Title Container -->
-    <div class="header__title-container">
+    <div class="header__title">
       <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
       <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
       <!-- Header - Button -->
@@ -46,11 +46,10 @@
       </div>
       <!-- Main Tables Container -->
       <section class="main-tables-container">
+        <!-- Tables Mobile -->
         <div class="tables-mobile slideshow">
           <div class="slideshow__controls">
-            <span class="prev">
-              <img src="assets/icons/right-arrow.svg" alt="">
-            </span>
+            <span class="arrow prev"></span>
             <!-- <span class="next">
               <img src="assets/icons/right-arrow.svg" alt="">
             </span> -->
@@ -82,6 +81,7 @@
                     </tr>
                   </table>                
                 </div>
+                <!-- Currency Table - Date -->
                 <div class="currency-table__date">
                   <p><b>Actualizado:</b> 19 de julio 23:45</p>
                 </div>
@@ -112,6 +112,7 @@
                     </tr>
                   </table>                
                 </div>
+                <!-- Currency Table - Date -->
                 <div class="currency-table__date commissions-table__date">
                   <p><b>Actualizado:</b> 19 de julio 23:48</p>
                 </div>
@@ -119,6 +120,7 @@
             </div>
           </div>
         </div>
+        <!-- Tables Desktop -->
         <div class="tables-desktop">
           <!-- Main Currency Table -->
           <div class="main-currency-table">
@@ -144,6 +146,7 @@
                 </tr>
               </table>                
             </div>
+            <!-- Currency Table - Date -->
             <div class="currency-table__date">
               <p><b>Actualizado:</b> 19 de julio 23:45</p>
             </div>
@@ -172,6 +175,7 @@
                 </tr>
               </table>                
             </div>
+            <!-- Currency Table - Date -->
             <div class="currency-table__date commissions-table__date">
               <p><b>Actualizado:</b> 19 de julio 23:48</p>
             </div>
@@ -182,27 +186,35 @@
 
     <!-- Main Product Detail -->
     <section class="main-product-detail">
+      <!-- Product Detail - Batata Logo -->
       <span class="product-detail__batata-logo"></span>
+      <!-- Product Detail - Title -->
       <div class="product-detail__title">
-          <h2>Creamos un producto sin comparación.</h2>
-          <p>Confiable y diseñado para su uso diario.</p>
+          <h2>Te ayudamos a tomar la mejor decisión.</h2>
+          <p>Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
       </div>
+
+      <!-- Product Cards -->
       <section class="product-cards__container">
+        <!-- Product Detail - Card -->
         <article class="product-detail__card">
           <span class="product__icon-card clock"></span>
           <p class="product__card-title">Tiempo real</p>
           <p class="product__card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
         </article>
+        <!-- Product Detail - Card -->
         <article class="product-detail__card">
           <span class="product__icon-card eye"></span>
           <p class="product__card-title">No hay tasas escondidas</p>
           <p class="product__card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
         </article>
+        <!-- Product Detail - Card -->
         <article class="product-detail__card">
           <span class="product__icon-card dollar"></span>
           <p class="product__card-title">Información confiable</p>
           <p class="product__card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
         </article>
+        <!-- Product Detail - Card -->
         <article class="product-detail__card">
           <span class="product__icon-card check"></span>
           <p class="product__card-title">Tiempo real</p>
@@ -222,7 +234,9 @@
         <h2>Escoge el plan que mejor se ajuste a ti.</h2>
         <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
       </div>
+      <!-- Plans Container - Slider -->
       <section class="plans-container__slider">
+        <!-- Plans Container - Card -->
         <article class="plans-container__card">
           <div class="plan-info-container">
             <h3 class="plan-card__title">Pago Anual</h3>
@@ -231,7 +245,9 @@
             <button class="plan-card__cta">Escoge este <span></span></button>
           </div>
         </article>
+        <!-- Plans Container - Card -->
         <article class="plans-container__card">
+          <!-- Recommended -->
           <p class="recommended">Recomendado</p>
           <div class="plan-info-container">
             <h3 class="plan-card__title">Pago Anual</h3>
@@ -240,6 +256,7 @@
             <button class="plan-card__cta">Escoge este <span></span></button>
           </div>
         </article>
+        <!-- Plans Container - Card -->
         <article class="plans-container__card">
           <div class="plan-info-container">
             <h3 class="plan-card__title">Pago Anual</h3>
@@ -249,9 +266,17 @@
           </div>
         </article>
       </section>
+    </section>
 
+    <!-- Main Questions -->
+    <section class="main-questions">
+      <!-- Questions Title -->
+      <div class="questions__title">
+        <h2>¿Preguntas? Aquí estamos para ti.</h2>
+      </div>
       <!-- Accordion -->
       <section class="accordion">
+        <!-- Accordion Item -->
         <article class="accordion-item">
           <div class="accordion-header">
             <h4>Batabit me permite hacer compras en su plataforma?</h4>
@@ -261,6 +286,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
           </div>
         </article>
+        <!-- Accordion Item -->
         <article class="accordion-item">
           <div class="accordion-header">
             <h4>Qué es Bitcoin?</h4>
@@ -270,6 +296,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
           </div>
         </article>
+        <!-- Accordion Item -->
         <article class="accordion-item">
           <div class="accordion-header">
             <h4>Cómo puedo realizar una transacción en bitcoins?</h4>
@@ -279,6 +306,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
           </div>
         </article>
+        <!-- Accordion Item -->
         <article class="accordion-item">
           <div class="accordion-header">
             <h4>Cómo aseguro mis compras?</h4>
@@ -288,7 +316,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias pariatur commodi aspernatur, esse vero quisquam facilis ea veniam sit adipisci officia perferendis maiores magni, est nulla repudiandae. Iusto, non cumque.</p>
           </div>
         </article>
-      </div>
+      </section>
     </section>
   </main>
  
@@ -302,7 +330,7 @@
       </ul>
     </section>
     <section class="right">
-      <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit">
+      <img src="./assets/img/logo-footer-min.svg" alt="Logo Batatabit">
     </section>
   </footer>
 
