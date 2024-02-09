@@ -538,6 +538,9 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: both proximity;
 }
+.plans-container__slider::-webkit-scrollbar {
+  display: none;
+}
 
 .plans-container__card {
   position: relative;
